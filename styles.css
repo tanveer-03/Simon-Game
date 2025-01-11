@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+#green {
+  background: #4caf50;
+}
+
+#red {
+  background: #f44336;
+}
+
+#yellow {
+  background: #ffeb3b;
+}
+
+#blue {
+  background: #2196f3;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#start-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#start-btn:hover {
+  background: #45a049;
+}
+
+#score {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+}
